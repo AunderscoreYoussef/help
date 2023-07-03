@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lekton:wght@400;700&family=Oswald:wght@300;400;500&family=VT323&display=swap">
+    <link rel="stylesheet" type="text/css" href="{% static 'registerform.css' %}">
+    <title>Store Registration</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Store <span>Registration</span></h1>
+        <form method="post" enctype="multipart/form-data" class="register-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+body {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.discount {
+    margin-left: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.percentageHeader {
+    color: #54E3B8;
+}
+
+.contact {
+    color: white;
+    margin-right: 30px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.box {
+    width: 50%;
+    min-height: 400px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#box-one {
+    background-color: #54E3B8;
+}
+
+#box-two {
+    background-color: #555555;
+}
+
+@media screen and (max-width: 900px) {
+    .box {
+        width: 100%;
+    }
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.bigText {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.registerButton {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registerButton:hover {
+    background-color: #54E3B8;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.login-form {
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+    width: 300px;
+}
+
+.login-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.dashed-line {
+    border: none;
+    border-top: 2px dashed black;
+    width: 100%;
+}
+
+.div-field {
+    margin-top: 20px;
+}
+
+.form-field {
+    padding: 5px 30px;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: block;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 5px;
+}
+
+.login-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Inconsolata', monospace;
+}
+
+.login-button:hover{
+    background-color: #54E3B8;
+    border: 1px solid black;
+    color: black;
+}
+
+.image {
+    width: 90%;
+}
+
+.not-registered {
+    text-align: right;
+    padding-right: 5px;
+    margin-bottom: 3px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contact-us {
+    margin-left: 2px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.icon i {
+    color: #54E3B8;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.iconText {
+    font-size: 16px;
+}
+
+.percentageFooter {
+    color: #54E3B8;
+    margin-left: 30px;
+    font-size: 40px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lekton:wght@400;700&family=Oswald:wght@300;400;500&family=VT323&display=swap">
+    <link rel="stylesheet" type="text/css" href="{% static 'discountlist.css' %}">
+    <title>Discount List</title>
+</head>
+<body>
+       <div class="store-info">
+        <h1>Welcome, {{ store.name }}</h1>
+        <p>Address: {{ store.address }} ({{ store.latitude }}, {{ store.longitude }})</p>
+    </div>
+    <div class="content-container">
+        <h2></h2>
+        <div class="discounts-container">
+            <table>
+            <thead>
+                <tr>
+                    <th>URL</th>
+                    <th>Original Price</th>
+                    <th>Discounted Price</th>
+                    <th>Code</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for discount in discounts %}
+                    <tr>
+                        <td class="url-cell"><a href="{{ discount.url }}">{{ discount.url }}</a></td>
+                        <td>{{ discount.original_price }}</td>
+                        <td>{{ discount.discounted_price }}</td>
+                        <td>{{ discount.code }}</td>
+                        <td>
+                            <a href="{% url 'discount-update' discount.pk %}">Update</a>
+                        </td>
+                        <td>
+                            <a href="{% url 'discount-delete' discount.pk %}">Delete</a>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="6">No discounts available.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="add-item-container">
+        <a href="{% url 'add-discount' %}" class="add-item-button">Add Item</a>
+    </div>
+    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+</div>
+</body>

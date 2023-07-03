@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'additem.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'additem.css' %}">
+    <title>Add Discount</title>
+</head>
+<body>
+    <div class="box" id="box-discounts">
+        <div class="centered-content">
+            <div class="discount-form">
+                <p class="discount-title">Add Discount</p>
+                <hr class="dashed-line">
+                <div class="div-field">
+                    <div class="form-field">
+                        <form method="post" class="register-form">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+
+                    </div>
+                </div>
+                <img class="image" src="{% static 'barcode.png' %}" alt="barcode">
+                <hr class="dashed-line">
+                <button type="submit" class="add-button">Add Discount</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

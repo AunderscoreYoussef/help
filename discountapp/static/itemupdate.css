@@ -1,0 +1,76 @@
+body {
+    background-color: #54E3B8;
+}
+
+.discount-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.discount-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+    width: 300px;
+}
+
+.discount-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.dashed-line {
+    border: none;
+    border-top: 2px dashed black;
+    width: 100%;
+}
+
+.div-field {
+    margin-top: 20px;
+}
+
+.form-field {
+    padding: 5px 30px;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: block;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 5px;
+}
+
+.add-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-family: 'Inconsolata', monospace;
+}
+
+.add-button:hover{
+    background-color: #54E3B8;
+    border: 1px solid black;
+    color: black;
+}
+
+.image {
+    width: 90%;
+}

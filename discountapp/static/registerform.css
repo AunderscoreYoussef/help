@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0eebb8;
+    font-family: 'Oswald', sans-serif;
+}
+
+span {
+    color: #0eebb8;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: 0; 
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.register-form {
+    margin-top: 0;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+
+.register-form p {
+    margin: 0;
+    display: grid;
+    gap: 5px;
+    align-items: center;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form textarea,
+.register-form select {
+    width: 100%;
+    height: auto; 
+    padding: 10px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.register-form input[type="file"] {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.register-form input[type="submit"] {
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.register-form input[type="submit"]:hover {
+    background-color: #0eebb8;
+    color: black;
+}
